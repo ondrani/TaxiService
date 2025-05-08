@@ -9,4 +9,5 @@ public:
     virtual ~AbstractVehicle() = 0;
 
     virtual std::string GetSpz() = 0;
+    virtual std::string getInfo() = 0;
 };

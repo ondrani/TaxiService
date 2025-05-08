@@ -7,4 +7,6 @@ private:
 public:
     BusVehicle(std::string spz);
     ~BusVehicle();
+
+    std::string getInfo() override;
 };

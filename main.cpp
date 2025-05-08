@@ -6,7 +6,6 @@
 #include "BusVehicle.h"
 #include "LuxuryVehicle.h"
 
-
 #define DRIVER_COUNT 10
 #define DISPATCHER_COUNT 10
 #define ORDER_COUNT 100

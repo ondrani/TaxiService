@@ -8,4 +8,6 @@ private:
 public:
     LuxuryVehicle(std::string spz);
     ~LuxuryVehicle();
+
+    std::string getInfo() override;
 };
