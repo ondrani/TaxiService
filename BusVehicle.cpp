@@ -2,7 +2,7 @@
 
 BusVehicle::BusVehicle(std::string spz) : Vehicle(spz)
 {
-    this->isZTP = false;
+    this->isZTP = true;
 }
 
 BusVehicle::~BusVehicle()

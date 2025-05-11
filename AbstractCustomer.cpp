@@ -1,11 +1,11 @@
 #include "AbstractCustomer.h"
 
-AbstractCustomer::AbstractCustomer()
+AbstractCustomer::AbstractCustomer(std::string name)
 {
-
+    this->name = name;
 }
 
 AbstractCustomer::~AbstractCustomer()
 {
-    
+
 }

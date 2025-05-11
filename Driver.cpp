@@ -22,9 +22,14 @@ Driver::~Driver()
     delete[] this->vehicles;
 }
 
+std::string Driver::getName()
+{
+    return this->name;
+}
+
 void Driver::addVehicle(AbstractVehicle *v)
 {
-    this->vehicles[vehicleCount] = v;
+    this->vehicles[this->vehicleCount] = v;
     this->vehicleCount += 1;
 }
 
@@ -41,4 +46,20 @@ void Driver::removeVehicle(std::string spz)
             }
         }
     }
+}
+
+AbstractVehicle* Driver::getVehicle(std::string spz)
+{
+    for (int i = 0; i < this->vehicleCount; i++)
+    {
+        if (this->vehicles[i] != nullptr)
+        {
+            if (this->vehicles[i]->GetSpz() == spz)
+            {
+                return this->vehicles[i];
+            }
+        }
+    }
+    
+    return nullptr;
 }

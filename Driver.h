@@ -18,6 +18,8 @@ public:
     Driver(int id, std::string name, int vehicleCapacity);
     ~Driver();
 
+    std::string getName();
     void addVehicle(AbstractVehicle *v);
     void removeVehicle(std::string spz);
+    AbstractVehicle *getVehicle(std::string spz);
 };
